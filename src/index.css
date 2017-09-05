@@ -1,0 +1,334 @@
+html, body, #root {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #7cdbd5;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer .yellow a:hover {
+  color: #1CCC4E !important;
+}
+
+.timer-type-controls {
+  text-align: center;
+}
+
+.ui.yellow.button, .ui.yellow.buttons .button {
+  margin-bottom: 5px;
+}
+
+.clock-container {
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 10rem;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+.clock-container h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.timer-controls {
+  text-align: center;
+}
+
+
+/* PROJECTS */
+
+.projects {
+  padding-bottom: 100px;
+}
+
+.projects .column {
+  border-radius: 5rem;
+}
+
+
+/* card styles */
+
+.ui.card, .ui.cards>.card {
+  border-radius: 2rem;
+}
+
+.ui.fluid.card .header, .ui.fluid.card .meta, .ui.fluid.card .content {
+  padding-bottom: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.ui.fluid.red.card {
+  background-color: red;
+}
+
+.ui.fluid.yellow.card {
+  background-color: green;
+}
+
+.ui.fluid.green.card {
+  background-color: rgb(251, 189, 8);
+}
+
+.ui.card.add-project-button {
+  height: 102.16px;
+  text-align: center;
+  background: orange;
+}
+
+.ui.card.add-project-button:hover {
+  background: orange;
+}
+
+.ui.card.add-project-button .content-padding {
+  padding-top: 27px;
+}
+
+.ui.card.add-project-button form {
+  padding-top: 22px;
+}
+
+.ui.card.add-project-button form {
+  color: orange;
+}
+
+
+/* */
+
+.ui.segment {
+  border-radius: 2rem;
+  height: 102.16px;
+}
+
+
+/* COLORS */
+
+
+/* LOADING DOTS */
+
+.loading-spinner {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.dot {
+  background: black;
+  border-radius: 100%;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+}
+
+.dotOne {
+  animation: dotOneKeyframes 5s ease infinite;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dotTwo {
+  animation: dotTwoKeyframes 5s ease 0.4166666666666s infinite;
+  background: rgb(251, 189, 8);
+  position: absolute;
+  top: 0;
+  left: 35px;
+}
+
+.dotThree {
+  animation: dotThreeKeyframes 5s ease 0.83333333333s infinite;
+  background: #1CCC4E;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+@keyframes dotOneKeyframes {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  8.3333333333% {
+    top: 35px;
+    left: 0;
+  }
+  16.6666666666% {}
+  25% {
+    top: 35px;
+    left: 0;
+  }
+  33.3333333333% {
+    top: 35px;
+    left: 35px;
+  }
+  41.6666666666% {}
+  50% {
+    top: 35px;
+    left: 35px;
+  }
+  58.3333333333% {
+    top: 0;
+    left: 35px;
+  }
+  66.6666666666% {}
+  75% {
+    top: 0;
+    left: 35px;
+  }
+  83.3333333333% {
+    top: 0;
+    left: 0;
+  }
+  91.6666666666% {}
+  100% {}
+}
+
+@keyframes dotTwoKeyframes {
+  0% {
+    top: 0;
+    left: 14px;
+  }
+  8.3333333333% {
+    top: 0;
+    left: 0;
+  }
+  16.6666666666% {}
+  25% {
+    top: 0;
+    left: 0;
+  }
+  33.3333333333% {
+    top: 35px;
+    left: 0;
+  }
+  41.6666666666% {}
+  50% {
+    top: 35px;
+    left: 0;
+  }
+  58.3333333333% {
+    top: 35px;
+    left: 35px;
+  }
+  66.6666666666% {}
+  75% {
+    top: 35px;
+    left: 35px;
+  }
+  83.3333333333% {
+    top: 0;
+    left: 35px;
+  }
+  91.6666666666% {}
+  100% {}
+}
+
+@keyframes dotThreeKeyframes {
+  0% {
+    top: 35px;
+    left: 35px;
+  }
+  8.3333333333% {
+    top: 0;
+    left: 35px;
+  }
+  16.6666666666% {}
+  25% {
+    top: 0;
+    left: 35px;
+  }
+  33.3333333333% {
+    top: 0;
+    left: 0;
+  }
+  41.6666666666% {}
+  50% {
+    top: 0;
+    left: 0;
+  }
+  58.3333333333% {
+    top: 35px;
+    left: 0;
+  }
+  66.6666666666% {}
+  75% {
+    top: 35px;
+    left: 0;
+  }
+  83.3333333333% {
+    top: 35px;
+    left: 35px;
+  }
+  91.6666666666% {}
+  100% {}
+}
+
+
+/* Info dots style */
+
+.info-dots {
+  margin: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.info-dots .dot {
+  height: 12px;
+  line-height: 12px;
+  width: 12px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.info-dots .info-dotOne {
+  background: red;
+  display: inline-block;
+}
+
+.info-dots .info-dotTwo {
+  background: rgb(251, 189, 8);
+  display: inline-block;
+}
+
+.info-dots .info-dotThree {
+  background: green;
+  display: inline-block;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  40% {
+    transform: translate3d(0, -20%, 0) scale3d(.7, 1.5, 1);
+  }
+  100% {
+    transform: translate3d(0, -60%, 0) scale3d(1.5, .7, 1);
+  }
+}
+
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate 4;
+}
